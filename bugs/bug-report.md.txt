@@ -1,0 +1,24 @@
+# Relatório de Bugs
+
+## BUG 01 - Sistema permite vagas negativas
+
+Severidade: Média
+
+Passos para reproduzir:
+
+1 acessar cadastro
+2 inserir -5 em número de vagas
+3 preencher os demais campos
+4 clicar salvar
+
+Resultado atual:
+
+curso cadastrado com vagas negativas
+
+Resultado esperado:
+
+sistema deveria bloquear valores negativos
+
+Evidência:
+
+ver imagem bug01-vagas-negativas.png
