@@ -21,11 +21,14 @@ O formulário de cadastro possui os seguintes campos:
 
 A estratégia de testes foi baseada em cenários positivos, negativos e testes de limite para validar o comportamento da aplicação diante de diferentes entradas de dados.
 
-## Comportamento dinâmico identificado
+## Comportamentos condicionais identificados
 
-Durante a análise da aplicação foi identificado um comportamento condicional no formulário de cadastro:
+Durante a exploração da aplicação foi identificado que o formulário de cadastro altera dinamicamente os campos exibidos com base no tipo de curso selecionado.
 
-- Quando o tipo de curso é selecionado como **Online**, o campo **Link de inscrição** é exibido.
-- Quando o tipo de curso é **Presencial**, o campo não aparece.
+Regras observadas:
 
-Esse comportamento indica uma lógica dinâmica de interface que deve ser validada nos testes.
+- Quando o tipo de curso é **Online**, o campo **Link de inscrição** é exibido.
+- Quando o tipo de curso é **Presencial**, o campo **Endereço** é exibido.
+
+Esse comportamento indica que o formulário possui validações condicionais que devem ser consideradas nos cenários de teste.
+
